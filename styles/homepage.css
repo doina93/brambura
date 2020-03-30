@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../webfonts/Oswald-Regular.ttf");
+}
+
+body {
+    color: #2a2a2a;
+}
+.homepage-container {
+    padding: 30px;
+}
+.homepage-col {
+    margin-bottom: 30px;
+}
+.col-content {
+    background: url(../assets/bucegi.jpg) no-repeat right top;;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 340px;
+    position: relative;
+    color: #ffffff;
+    font-family: 'Oswald';
+}
+.col-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.col-content h1 {
+    position: absolute; 
+    top: 41%;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    z-index: 2;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../webfonts/Oswald-Regular.ttf");
+}
+@font-face {
+    font-family: 'Liujian';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../webfonts/LiuJianMaoCao-Regular.ttf");
+}
+
+@media all and (max-width: 1200px){
+    .col-content {
+        min-height: 290px;
+    }
+    .col-content h1 {
+        top:40%;
+    }
+}
+@media all and (max-width: 992px) {
+    .col-content {
+        min-height: 220px;
+    }
+    .col-content h1 {
+        font-size: 30px;
+    }
+}
+@media all and (max-width: 767px) {
+    .col-content {
+        min-height: 250px;
+    }
+    .col-content h1 {
+        top: 38%;
+        font-size: 36px;
+    }
+    .homepage-container {
+        padding: 15px;
+    }
+    .homepage-col {
+        margin-bottom: 15px;
+    }
+}
+@media all and (max-width: 575px) {
+    .col-content {
+        min-height: 130px;
+    }
+    .col-content h1 {
+        font-size: 30px;
+    }
+}
