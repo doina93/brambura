@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../webfonts/Oswald-Regular.ttf");
+}
 .category-container {
     background-color: #f5f5f5;
     text-align: center;
