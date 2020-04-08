@@ -12,6 +12,13 @@ header {
     width: 100%;
     z-index: 1;
 }
+nav .menuicon-,
+nav .cancelicon-,
+footer .instagramicon-,
+footer .mailicon-,
+footer .facebook-officialicon- {
+    color: #fff;
+}
 .navbar-logo {
     padding-left: 2rem;
 }
