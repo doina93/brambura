@@ -33,3 +33,28 @@ ul.breadcrumb-menu {
 .trail-info i {
     color: black;
 }
+.trail-info-col {
+    display: inline-flex;
+}
+.trail-info-col:first-child a:after {
+    content: ' \25BC';
+    font-size: 12px;
+}
+.trail-info-col:first-child a {
+    text-decoration: none;
+}
+.trail-info-col {
+    display: block;
+}
+.trail-info-col p {
+    margin-bottom: 0;
+}
+.trail-info-col:nth-last-child(2) {
+    display: inline-grid;
+}
+.trail-features img {
+    border-radius: 50%;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
