@@ -4,8 +4,14 @@
     font-weight: normal;
     src: url("../webfonts/Oswald-Regular.ttf");
 }
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../webfonts/Montserrat-Regular.ttf");
+}
 ul.breadcrumb-menu {
-    padding: 10px 16px;
+    padding: 10px 5rem;
     list-style: none;
     background-color: transparent;
 }
@@ -30,31 +36,193 @@ ul.breadcrumb-menu {
 .breadcrumb-menu li a:hover {
     text-decoration: underline;
 }
-.trail-info i {
-    color: black;
+.trail-title {
+    text-align: center;
+    padding-bottom: 25px;
 }
-.trail-info-col {
+.trail-intro {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    background-color: #f5fafa;
+}
+.trail-summary {
+    padding-top: 50px;
+}
+.trail-start {
+    padding-top: 50px;
+}
+.trail-start h5 {
+    padding-bottom: 20px;
+}
+.trail-stage-description {
+    padding-top: 25px;
+}
+.trail-stage {
     display: inline-flex;
+    padding: 10px 0 10px 0;
 }
-.trail-info-col:first-child a:after {
-    content: ' \25BC';
-    font-size: 12px;
+.trail-stage img {
+    height: 20px;
+    width: 20px;
+    color: #fff;
+    border: 1px solid #000;
+    margin-right: 5px;
 }
-.trail-info-col:first-child a {
-    text-decoration: none;
-}
-.trail-info-col {
-    display: block;
-}
-.trail-info-col p {
+.trail-stage p {
     margin-bottom: 0;
 }
-.trail-info-col:nth-last-child(2) {
-    display: inline-grid;
+.trail-features p {
+    margin-bottom: 0;
 }
-.trail-features img {
-    border-radius: 50%;
-    background-color: green;
-    width: 50px;
-    height: 50px;
+.trail-features {
+    padding-right: 0;
+    padding-top: 50px;
+}
+.trail-features p:nth-child(2) {
+    margin-left: auto;
+    width: 100%;
+}
+.trail-intro-pic img {
+    width: 100%;
+}
+.trail-info-item {
+    padding: 10px 0 10px 0;
+}
+.trail-info-item a::after {
+    content: ' \25BC';
+    font-size: 11px;
+}
+.trail-directions {
+    padding: 0px 6rem;
+}
+.trail-map {
+    background: lightgrey;
+    height: 400px;
+    position: relative;
+}
+.map-legend {
+    display: inline-flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: darkgrey;
+    width: 100%;
+}
+.trailhead p, 
+.coordinates p {
+    margin-bottom: 0;
+}
+.coordinates {
+    padding-left: 20px;
+}
+.trail-text {
+    padding-top: 20px;
+}
+.trail-description-container {
+    padding: 0px 6rem;
+    background-color: #f5fafa;
+}
+.trail-description-container-2 {
+    padding: 50px 6rem 0;
+}
+.trail-description-img img {
+    width: 100%;
+}
+.weather-container {
+    padding: 0 6rem;
+    background-color: #f5fafa;
+}
+.weather-container-header {
+    text-align: right;
+    border-bottom: 1px solid lightslategray;
+    margin-bottom: 20px;
+}
+.weather-forecast {
+    width: 100%;
+    height: 100px;
+    background-color: lightgrey;
+}
+.tips-thumbnail-container {
+    padding: 20px 20rem 0 6rem;
+}
+.tips-thumbnail-header {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 20px;
+}
+.tips-thumbnail {
+     background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%), url(../assets/parang.jpg) no-repeat center;
+     background-size: cover;
+     margin-bottom: 30px;
+     min-height: 200px;
+     padding: 20px;
+     position: relative;
+}
+.tips-thumbnail a {
+     text-decoration: none;
+     color: #fff;
+     position: absolute;
+     bottom: 0;
+     left: 20px;
+     font-family: 'Montserrat';
+}
+.tips-thumbnail a p:nth-child(2) {
+     color: lightgrey;
+}
+.feedback-container {
+    padding: 0 20rem 0 6rem;
+}
+.feedback-title {
+    text-align: center;
+}
+.trail-social {
+    text-align: center;
+}
+.trail-social a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 20px;
+}
+form { 
+     max-width: 420px; 
+     margin: 15px auto 50px; 
+}
+.comment-input {
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid lightgrey;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+.comment-input:focus { 
+    border:2px solid green; 
+}
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+.comment-button {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #E9A82B;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+.comment-button:hover { 
+    background: #8AAB37; 
 }
