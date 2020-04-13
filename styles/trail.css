@@ -39,6 +39,15 @@ ul.breadcrumb-menu {
 .trail-title {
     text-align: center;
     padding-bottom: 25px;
+    font-family: 'Oswald';
+}
+.trail-name {
+    color: #3f3f3f;
+}
+.range-name {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #939393;
 }
 .trail-intro {
     padding-left: 6rem;
@@ -47,15 +56,19 @@ ul.breadcrumb-menu {
 }
 .trail-summary {
     padding-top: 50px;
+    color: #3f3f3f;
+    font-family: 'Oswald';
 }
 .trail-start {
     padding-top: 50px;
+    font-family: 'Montserrat';
 }
 .trail-start h5 {
     padding-bottom: 20px;
 }
 .trail-stage-description {
     padding-top: 25px;
+    font-family: 'Montserrat';
 }
 .trail-stage {
     display: inline-flex;
@@ -73,6 +86,13 @@ ul.breadcrumb-menu {
 }
 .trail-features p {
     margin-bottom: 0;
+    font-family: 'Oswald';
+    color: #939393;
+}
+.trail-features span,
+.trail-features span a {
+    color: #E9A82B;
+    text-decoration: none;
 }
 .trail-features {
     padding-right: 0;
@@ -125,6 +145,7 @@ ul.breadcrumb-menu {
 }
 .trail-description-container-2 {
     padding: 50px 6rem 0;
+    font-family: 'Montserrat';
 }
 .trail-description-img img {
     width: 100%;
@@ -137,6 +158,9 @@ ul.breadcrumb-menu {
     text-align: right;
     border-bottom: 1px solid lightslategray;
     margin-bottom: 20px;
+    font-family: 'Oswald';
+    letter-spacing: 1.5px;
+    color: #3f3f3f;
 }
 .weather-forecast {
     width: 100%;
@@ -149,6 +173,9 @@ ul.breadcrumb-menu {
 .tips-thumbnail-header {
     border-bottom: 1px solid lightgrey;
     margin-bottom: 20px;
+    font-family: 'Oswald';
+    letter-spacing: 1.5px;
+    color: #3f3f3f;
 }
 .tips-thumbnail {
      background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%), url(../assets/parang.jpg) no-repeat center;
@@ -177,11 +204,18 @@ ul.breadcrumb-menu {
 }
 .trail-social {
     text-align: center;
+    font-family: 'Oswald';
+    letter-spacing: 1.5px;
+    color: #3f3f3f;
+    text-transform: uppercase;
 }
 .trail-social a {
     text-decoration: none;
     color: #000;
     padding: 0 20px;
+}
+.trail-social a:hover {
+    color: #E9A82B;
 }
 form { 
      max-width: 420px; 

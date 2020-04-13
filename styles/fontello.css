@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../webfonts/fontello.ttf?50571082') format('truetype');
+  src: url('../webfonts/fontello.ttf?16989108') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,7 +10,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?50571082#fontello') format('svg');
+    src: url('../font/fontello.svg?16989108#fontello') format('svg');
   }
 }
 */
@@ -48,11 +48,21 @@
   -moz-osx-font-smoothing: grayscale;
  
   /* Uncomment for 3D effect */
-   /*text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);*/ 
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
 .instagramicon-:after { content: '\21'; } /* '!' */
 .facebook-officialicon-:after { content: '\22'; } /* '&quot;' */
+.rulericon-:before { content: '\23'; } /* '#' */
 .cancelicon-:before { content: '\24'; } /* '$' */
 .menuicon-:before { content: '\25'; } /* '%' */
+.commenting-oicon-:before { content: '\26'; } /* '&amp;' */
+.commenticon-:before { content: '\27'; } /* ''' */
+.hourglassicon-:before { content: '\28'; } /* '(' */
+.clockicon-:before { content: '\29'; } /* ')' */
+.chart-areaicon-:before { content: '\2a'; } /* '*' */
+.shareicon-:before { content: '\2b'; } /* '+' */
+.floppyicon-:before { content: '\2c'; } /* ',' */
+.locationicon-:before { content: '\2d'; } /* '-' */
+.progress-2icon-:before { content: '\2e'; } /* '.' */
 .mailicon-:after { content: '\e800'; } /* '' */
