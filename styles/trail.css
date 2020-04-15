@@ -55,7 +55,7 @@ ul.breadcrumb-menu {
     background-color: #f5fafa;
 }
 .trail-summary {
-    padding-top: 50px;
+    padding: 50px 1rem;
     color: #3f3f3f;
     font-family: 'Oswald';
 }
@@ -96,17 +96,23 @@ ul.breadcrumb-menu {
 }
 .trail-features {
     padding-right: 0;
-    padding-top: 50px;
+    text-align: center;
+}
+.trail-features-wrapper {
+    display: inline-flex;
 }
 .trail-features p:nth-child(2) {
     margin-left: auto;
     width: 100%;
 }
+.trail-intro-pic {
+    margin: auto;
+}
 .trail-intro-pic img {
     width: 100%;
 }
 .trail-info-item {
-    padding: 10px 0 10px 0;
+    padding: 10px;
 }
 .trail-info-item a::after {
     content: ' \25BC';
@@ -146,6 +152,9 @@ ul.breadcrumb-menu {
 .trail-description-container-2 {
     padding: 50px 6rem 0;
     font-family: 'Montserrat';
+}
+.trail-description-img {
+    margin: auto;
 }
 .trail-description-img img {
     width: 100%;
@@ -259,4 +268,88 @@ textarea {
 }
 .comment-button:hover { 
     background: #8AAB37; 
+}
+@media all and (max-width: 1050px) {
+    .tips-thumbnail-container {
+        padding-right: 16rem;
+    }
+}
+@media all and (max-width: 992px) {
+    .trail-intro {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .trail-description-container,
+    .trail-description-container-2 {
+        padding: 0 3rem;
+    }
+    .tips-thumbnail-container {
+        padding: 1rem;
+    }
+    .feedback-container {
+        padding: 0;
+    }
+    .map-legend {
+        font-size: 11px;
+    }
+    .coordinates {
+        padding-left: 10px;
+    }
+}
+@media all and (max-width: 767px) {
+    ul.breadcrumb-menu {
+        padding: 0;
+    }
+    .trail-name {
+        font-size: 20px;
+    }
+    .range-name {
+        font-size: 18px;
+    }
+    .trail-intro {
+        padding: 0 1rem;
+    }
+    .trail-summary {
+        padding-top: 1rem;
+    }
+    .trail-features {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .trail-directions {
+        padding: 1rem 1rem 0;
+    }
+    .trail-map {
+        height: 200px;
+    }
+    .map-legend {
+        font-size: 14px;
+    }
+    .trail-start {
+        padding-top: 0;
+    }
+    .trail-description-container {
+        padding: 0 1rem;
+    }
+    .trail-description-container-2 {
+        padding: 1rem 1rem 0;
+    }
+    .weather-container {
+        padding: 0 1rem;
+    }
+    .tips-thumbnail-container {
+        padding: 1rem 1rem 0;
+    }
+    .feedback-container {
+        padding: 1rem 1rem 0;
+    }
+    .trail-social {
+        display: inline-grid;
+        text-align: left;
+    }
+}
+@media all and (max-width: 578px) {
+    .trail-features-wrapper {
+        display: block;
+    }
 }
