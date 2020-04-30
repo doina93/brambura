@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../webfonts/Oswald-Regular.ttf");
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../webfonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: 'NunitoSans';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../webfonts/NunitoSans-Regular.ttf");
+}
+.tips-category-header {
+    height: 100%;
+}
+.tips-img-container {
+    background: url(../assets/bucegivertical.jpg);
+    background-size: cover;
+    height: 600px;
+    z-index: 2;
+}
+.tips-title-column {
+    margin-top: 10%;
+    font-family: 'NunitoSans';
+}
+.tips-category-title h1 {
+    font-weight: 700;
+}
+.tips-category-title span {
+    text-transform: none;
+}
+.tips-card {
+    width: 18rem;
+}
+.card-img-top {
+    width: 286px;
+    height: 180px;
+}
+.tips-container {
+    background-color: #f5f5f5;
+    text-align: center;
+    margin-bottom: -10px;
+    padding-bottom: 120px;
+    padding-top: 80px;
+    z-index: 1;
+}
+.category-card {
+    max-width: 800px;
+    margin: 10px auto;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    border-radius: 0px;
+    border-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.category-card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.category-card img {
+    padding: 20px;
+}
+.category-title {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+}
+label .category-title:after,
+label .category-title:before {
+     content: " \2219 ";
+     display: block;
+}
+.card-list {
+    display: inline-flex;
+    list-style: none;
+    padding-left: 0;
+    width: 360px;
+    color: grey;
+}
+.card-list-item {
+    width: 100%;
+    margin: auto;
+    letter-spacing: 1.5px;
+}
+.card-list label {
+    display: inline-flex;
+}
+.card-list label:not(:last-child):after {
+    content: " \2219 ";
+    padding: 10px;
+}
+.category-card a {
+    text-decoration: none;
+    color: black;
+}
+.tips-container .category-card {
+    font-family: 'Montserrat';
+}
+.tips-container .category-card .card-text {
+    font-weight: 400;
+    color: grey;
+}
+.tips-container .category-card .card-title {
+    margin-top: 25px;
+}
+@media all and (min-width: 992px) {
+     .tips-category-header .tips-title-column {
+        padding-left: 4rem;
+     }
+}
+@media all and (min-width: 768px) {
+    .category-card img {
+        width: 230px;
+    }
+    .card-title {
+        margin-top: 50px;
+        font-size: 25px;
+    }
+    .category-card .card-body {
+        padding-left: 40px;
+    }
+    .tips-category-header .tips-title-column {
+        margin: auto;
+    }
+    .tips-img-container {
+        height: 400px;
+    }
+    .tips-container {
+        padding-top: 5%;
+    }
+}
+@media all and (max-width: 767px) {
+    .card-list {
+        display: inline;
+    }
+    .card-list label {
+        margin-bottom: 0;
+    }
+    .category-card .card-body {
+        text-align: center;
+        padding-top: 0;
+    }
+     .tips-img-container {
+        display: none;
+    }
+    .tips-category-header .tips-title-column {
+        margin: 5%;
+    }
+    .tips-container {
+        padding-top: 5%;
+    }
+}
