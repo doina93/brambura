@@ -6,11 +6,12 @@
 }
 
 header {
-    background: linear-gradient(rgba(95, 95, 95, 0.5), rgba(141, 153, 174, 0.5)), url(../assets/headerpic.jpg) no-repeat right top;
-    background-size: cover;
-    height: 130px;
+/*    background: linear-gradient(rgba(95, 95, 95, 0.5), rgba(141, 153, 174, 0.5)), url(../assets/headerpic.jpg) no-repeat right top;
+    background-size: cover;*/
+    height: 100px;
     width: 100%;
     z-index: 1;
+    background-color: #000;
 }
 nav .menuicon-,
 nav .cancelicon-,
@@ -24,7 +25,10 @@ footer .facebook-officialicon- {
 }
 .navbar-logo img {
     width: 116px;
-    margin-top: 16px;
+/*    margin-top: 16px;*/
+}
+.custom-nav {
+    height: 100px;
 }
 .custom-nav .custom-nav-list .custom-nav-link {
     color: #fff;
@@ -37,7 +41,7 @@ footer .facebook-officialicon- {
 }
 .custom-nav-list ul {
     margin-left: auto;
-    margin-top: 30px;
+/*    margin-top: 30px;*/
 }
 .custom-nav .custom-nav-list .custom-nav-link:hover,
 .custom-nav .custom-nav-list .custom-nav-link:active {
@@ -81,7 +85,7 @@ footer {
 @media all and (max-width: 1200px){
 
 }
-@media all and (min-width: 767px) {
+@media all and (min-width: 768px) {
     .custom-nav-item {
         position: relative;
     }
@@ -156,7 +160,7 @@ footer {
         z-index: 4;
     }
     .nav-background {
-        background-color: rgba(104, 118, 129, 0.9);
+        background-color: rgba(104, 118, 129, 1);
     }
     .collapsing {
         -webkit-transition: none;
@@ -170,6 +174,4 @@ footer {
         display: none;
     }
 }
-@media all and (max-width: 576px) {
 
-}

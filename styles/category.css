@@ -9,6 +9,12 @@
     text-align: center;
     margin-bottom: -10px;
     padding-bottom: 60px;
+    padding-top: 5%;
+}
+.category-img-container {
+    background-image: url(../assets/parang.jpg);
+    background-size: cover;
+    height: 600px;
 }
 .category-card {
     max-width: 800px;
@@ -31,6 +37,9 @@
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4.5px;
+}
+.category-title-column {
+    margin: auto;
 }
 label .category-title:after,
 label .category-title:before {
@@ -60,7 +69,8 @@ label .category-title:before {
     text-decoration: none;
     color: black;
 }
-@media all and (min-width: 768px) {
+
+@media all and (min-width: 769px) {
     .category-card img {
         width: 230px;
     }
@@ -70,6 +80,9 @@ label .category-title:before {
     }
     .category-card .card-body {
         padding-left: 40px;
+    }
+    .category-img-container {
+        height: 400px;
     }
 }
 @media all and (max-width: 768px) {
@@ -82,5 +95,12 @@ label .category-title:before {
     .category-card .card-body {
         text-align: center;
         padding-top: 0;
+    }
+    .category-img-column,
+    .category-img-container {
+        display: none;
+    }
+    .category-title {
+        margin: 5%;
     }
 }
