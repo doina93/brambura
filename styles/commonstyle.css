@@ -69,7 +69,7 @@ footer {
 .footer-item a div:hover,
 .footer-item a div:active,
 .footer-item a div:focus {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(0, 0, 0, .5);
 }
 .footer-item a {
     text-decoration: none;
@@ -287,6 +287,11 @@ textarea {
     }
     .comment-body {
         width: 100%;
+    }
+    .footer-item a div:hover,
+    .footer-item a div:active,
+    .footer-item a div:focus {
+        margin: 0 -1rem;
     }
 }
 
