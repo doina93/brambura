@@ -54,21 +54,24 @@ ul.breadcrumb-menu {
     padding-right: 6rem;
     background-color: #f5fafa;
 }
-.trail-summary {
-    padding: 50px 1rem;
-    color: #3f3f3f;
-    font-family: 'Oswald';
-}
 .trail-start {
     padding-top: 50px;
     font-family: 'Montserrat';
 }
 .trail-start h5 {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
 }
 .trail-stage-description {
-    padding-top: 25px;
+    padding:  1.875em 0;
     font-family: 'Montserrat';
+    margin: 0 auto;
+}
+.trail-stage-description h5 {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid lightgrey;
 }
 .trail-stage {
     display: inline-flex;
@@ -83,6 +86,7 @@ ul.breadcrumb-menu {
 }
 .trail-stage p {
     margin-bottom: 0;
+    font-weight: 600;
 }
 .trail-features p {
     margin-bottom: 0;
@@ -95,7 +99,6 @@ ul.breadcrumb-menu {
     text-decoration: none;
 }
 .trail-features {
-    padding-right: 0;
     text-align: center;
 }
 .trail-features-wrapper {
@@ -106,10 +109,10 @@ ul.breadcrumb-menu {
     width: 100%;
 }
 .trail-intro-pic {
-    margin: auto;
+    text-align: center;
 }
 .trail-intro-pic img {
-    width: 100%;
+    width: 66%;
 }
 .trail-info-item {
     padding: 10px;
@@ -119,11 +122,11 @@ ul.breadcrumb-menu {
     font-size: 11px;
 }
 .trail-directions {
-    padding: 0px 6rem;
+    padding: 2rem 6rem;
 }
 .trail-map {
     background: lightgrey;
-    height: 400px;
+    height: 100%;
     position: relative;
 }
 .map-legend {
@@ -160,127 +163,180 @@ ul.breadcrumb-menu {
     width: 100%;
 }
 .weather-container {
-}
-.weather-forecast {
-    display: inline-flex;
+    margin: 1em 0 0 0;
 }
 .weather-data-header {
-    text-align: right;
+    padding-left: 6rem;
+    font-family: 'Montserrat';
     text-transform: uppercase;
-    font-family: 'Oswald';
-    letter-spacing: 1.5px;
-    color: #3f3f3f;
-    margin-left: auto;
-    position: absolute;
-    right: 50%;
-}
-.weather-data-header h4 {
-    font-size: 12px;
 }
 .weather-data {
-    width: 50%;
-    height: 32px;
-    background-color: lightgrey;
-    margin-left: auto;
-    position: relative;
+    height: 3em;
+    background: #939393;
+    margin: 0 5rem 1rem;
 }
 .tips-thumbnail-container {
-    padding: 20px 20rem 0 6rem;
+    padding: 2rem 6rem;
 }
 .tips-thumbnail-header {
     border-bottom: 1px solid lightgrey;
     margin-bottom: 20px;
-    font-family: 'Oswald';
+    font-family: 'Montserrat';
     letter-spacing: 1.5px;
     color: #3f3f3f;
 }
 .tips-thumbnail {
-     background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%), url(../assets/parang.jpg) no-repeat center;
-     background-size: cover;
-     margin-bottom: 30px;
-     min-height: 200px;
-     padding: 20px;
-     position: relative;
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%), url(../assets/parang.jpg) no-repeat center;
+    background-size: cover;
+    margin-bottom: 30px;
+    min-height: 200px;
+    padding: 20px;
+    position: relative;
 }
 .tips-thumbnail a {
-     text-decoration: none;
-     color: #fff;
-     position: absolute;
-     bottom: 0;
-     left: 20px;
-     font-family: 'Montserrat';
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    font-family: 'Montserrat';
 }
 .tips-thumbnail a p:nth-child(2) {
-     color: lightgrey;
+    color: lightgrey;
 }
-.feedback-container {
-    padding: 0 20rem 0 6rem;
+.carousel-cell {
+    width: 33.33%;
+    height: 200px;
+    margin-right: 10px;
 }
-.feedback-title {
-    text-align: center;
-}
+
 .trail-social {
     text-align: center;
     font-family: 'Oswald';
     letter-spacing: 1.5px;
     color: #3f3f3f;
     text-transform: uppercase;
+    padding: 0 5rem;
 }
 .trail-social a {
     text-decoration: none;
-    color: #000;
-    padding: 0 20px;
 }
-.trail-social a:hover {
-    color: #E9A82B;
+.social-button {
+    width: 100%;
+    background: #E9A82B;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.3em;
+    font-size: 1.5em;
 }
-form { 
-     max-width: 420px; 
-     margin: 15px auto 50px; 
+.social-button:hover,
+.social-button:active,
+.social-button:focus {
+    background: #8AAB37;
 }
-.comment-input {
-  color: #000;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  line-height: 22px;
-  background-color: transparent;
-  border: 2px solid lightgrey;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
+.save-map {
+    margin-top: 4.0625em;
 }
-.comment-input:focus { 
-    border:2px solid green; 
+.save-map h6 {
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
 }
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
+.save-map-buttons {
+    display: inline-flex;
+    width: 100%;
+    font-family: 'Oswald';
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
 }
-.comment-button {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background: #E9A82B;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-  font-weight: 700;
+.save-map-buttons a {
+    width: 50%;
+    text-decoration: none;
+    color: #fff;
+    background: #E9A82B;
+    margin: 0 0.3em;
+    padding: 0.5em;
 }
-.comment-button:hover { 
-    background: #8AAB37; 
+.save-map-buttons a:hover, 
+.save-map-buttons a:focus,
+.save-map-buttons a:active {
+    background: #8AAB37;
 }
-@media all and (max-width: 1050px) {
-    .tips-thumbnail-container {
-        padding-right: 16rem;
-    }
+.alert-container {
+    padding: 1rem 6rem;
+    text-align: center;
+}
+.flickity-page-dots {
+    display: none;
+}
+.custom-alerts {
+    width: 100%;
+}
+.alert-item {
+    display: inline-flex;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.7em 0;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.alert-item p {
+    margin: auto 0;
+    padding-left: 3em;
+    text-align: left;
+}
+.alert-img {
+    margin: -1em;
+}
+.bear-alert {
+    background: #FFBABA;
+    color: #D8000C;
+}
+.bear-alert-img {
+    background: url(../assets/triangle-bear.svg) top left no-repeat;
+    background-size: cover;
+}
+.snake-alert {
+    background: #DFF2BF;
+    color: #270;
+}
+.snake-alert-img {
+    background: url(../assets/triangle-snake.svg) top left no-repeat;
+    background-size: cover;
+}
+.dog-alert {
+    background: #FEEFB3;
+    color: #9F6000;
+}
+.dog-alert-img {
+    background: url(../assets/triangle-dog.svg) top left no-repeat;
+    background-size: cover;
+}
+.water-alert {
+    background: #BEF;
+    color: #059;
+}
+.water-alert-img {
+    background: url(../assets/triangle-water.svg) top left no-repeat;
+    background-size: cover;
+}
+.season-alert {
+    background: #FFF8E1;
+    color: #FF6F00;
+}
+.season-alert-img {
+    background: url(../assets/triangle-snowflake.svg) top left no-repeat;
+    background-size: cover;
+}
+.bear-alert-img,
+.snake-alert-img,
+.dog-alert-img,
+.water-alert-img,
+.season-alert-img {
+    width: 4em;
+    height: 4em;
 }
 @media all and (max-width: 992px) {
     ul.breadcrumb-menu {
@@ -308,73 +364,105 @@ textarea {
     }
 }
 @media all and (max-width: 767px) {
-    .breadcrumb-weather-container {
-        padding-bottom: 30px;
+        .breadcrumb-weather-container {
+            padding-bottom: 30px;
+        }
+        .weather-data-header {
+            text-align: left;
+            padding-left: 1rem;
+        }
+        .weather-data {
+            margin: 0;
+        }
+        ul.breadcrumb-menu {
+            padding: 0;
+        }
+        .trail-name {
+            font-size: 20px;
+        }
+        .range-name {
+            font-size: 18px;
+        }
+        .trail-intro {
+            padding: 0;
+            margin: auto;
+            background: transparent;
+        }
+        .trail-intro-pic img {
+            width: 100%;
+            overflow: hidden;
+        }
+        .trail-features {
+            padding: 0 1rem;
+            text-align: center;
+        }
+        .trail-features-wrapper {
+            display: block;
+        }
+        .trail-features-item {
+            padding: 10px 0;
+        }
+        .trail-directions {
+            padding: 1rem 1rem 0;
+        }
+        .trail-map {
+            height: 200px;
+        }
+        .map-legend {
+            font-size: 14px;
+        }
+        .trail-start {
+            padding-top: 0;
+        }
+        .trail-description-container {
+            padding: 0 1rem;
+        }
+        .trail-description-container-2 {
+            padding: 1rem 1rem 0;
+        }
+        .weather-container {
+            padding: 1rem;
+        }
+        .alert-container {
+            padding: 0 1rem;
+        }
+        .tips-thumbnail-container {
+            padding: 1rem 1rem 0;
+        }
+        .feedback-container {
+            padding: 1rem 1rem 0;
+        }
+        .trail-social {
+            padding: 0 1rem;
+        }
+        .map-container {
+            padding: 0;
+        }
+        .save-map {
+            margin: 0 0 1em;
+        }
+        .alert-item p {
+            font-size: smaller;
+            padding-left: 1.5em;
+        }
+        .carousel-cell {
+            width: 50%;
+        }
     }
-    .weather-data-header {
-        text-align: left;
-        left: 1rem;
+    @media all and (max-width: 578px) {
+        .trail-features-wrapper {
+            display: block;
+        }
+        .trail-social {
+            padding: 0;
+        }
+        .social-button {
+            margin-top: 0.3em;
+        }
+        .trail-intro-pic {
+            margin-right: 0;
+        }
+        .carousel-cell {
+            width: 100%;
+        }
     }
-    .weather-data {
-        margin-right: auto;
-        margin-left: 3rem;
-    }
-    ul.breadcrumb-menu {
-        padding: 0;
-    }
-    .trail-name {
-        font-size: 20px;
-    }
-    .range-name {
-        font-size: 18px;
-    }
-    .trail-intro {
-        padding: 0 1rem;
-    }
-    .trail-summary {
-        padding-top: 1rem;
-    }
-    .trail-features {
-        padding: 0 1rem;
-        text-align: center;
-    }
-    .trail-directions {
-        padding: 1rem 1rem 0;
-    }
-    .trail-map {
-        height: 200px;
-    }
-    .map-legend {
-        font-size: 14px;
-    }
-    .trail-start {
-        padding-top: 0;
-    }
-    .trail-description-container {
-        padding: 0 1rem;
-    }
-    .trail-description-container-2 {
-        padding: 1rem 1rem 0;
-    }
-    .weather-container {
-        padding: 0 1rem;
-    }
-    .tips-thumbnail-container {
-        padding: 1rem 1rem 0;
-    }
-    .feedback-container {
-        padding: 1rem 1rem 0;
-    }
-    .trail-social {
-        display: inline-grid;
-        text-align: left;
-    }
-}
-@media all and (max-width: 578px) {
-    .trail-features-wrapper {
-        display: block;
-    }
-    .weather-data {
-        width: 80%;
-    }
-}
