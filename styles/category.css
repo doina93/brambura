@@ -8,16 +8,13 @@
     background-color: #f5f5f5;
     text-align: center;
     margin-bottom: -10px;
-    padding-bottom: 60px;
-    padding-top: 5%;
+    padding: 3% 6rem 5.83em;
 }
 .category-img-container {
     background-image: url(../assets/parang.jpg);
     background-size: cover;
-    height: 600px;
 }
 .category-card {
-    max-width: 800px;
     margin: 10px auto;
     font-family: 'Oswald', sans-serif;
     text-align: left;
@@ -50,13 +47,17 @@ label .category-title:before {
     display: inline-flex;
     list-style: none;
     padding-left: 0;
-    width: 360px;
+    width: 100%;
     color: grey;
 }
 .card-list-item {
     width: 100%;
     margin: auto;
     letter-spacing: 1.5px;
+}
+.card-list-item span {
+    color: #E9A82B;
+    font-size: smaller;
 }
 .card-list label {
     display: inline-flex;
@@ -70,7 +71,12 @@ label .category-title:before {
     color: black;
 }
 
-@media all and (min-width: 769px) {
+@media all and (max-width: 992px) {
+    .category-container {
+        padding: 3% 1.5rem 5.83em;
+    }
+}
+@media all and (min-width: 768px) {
     .category-card img {
         width: 230px;
     }
@@ -82,7 +88,18 @@ label .category-title:before {
         padding-left: 40px;
     }
     .category-img-container {
-        height: 400px;
+        height: 21.875em;
+    }
+    .category-header {
+        padding-right: 0;
+    }
+}
+@media all and (width: 768px) {
+    .category-container {
+        padding: 3% 3rem 5.83em;
+    }
+    .category-title-column {
+        margin-right: -25%;
     }
 }
 @media all and (max-width: 768px) {
@@ -103,4 +120,7 @@ label .category-title:before {
     .category-title {
         margin: 5%;
     }
+}
+@media all and (max-width: 576px) {
+    
 }
