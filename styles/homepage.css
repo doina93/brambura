@@ -4,24 +4,53 @@
     font-weight: normal;
     src: url("../webfonts/Oswald-Regular.ttf");
 }
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../webfonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../webfonts/Oswald-Regular.ttf");
+}
 
 body {
     color: #2a2a2a;
 }
 .homepage-container {
     padding: 30px;
+    width: 100%;
+}
+.homepage-intro {
+    background: url(../assets/headerpic1.jpg) no-repeat right top;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+.homepage-intro-slogan {
+    background: black;
+    color: #fff;
+    font-family: 'Oswald';
+    width: 300px;
+    padding: 50px;
+    margin: auto;
 }
 .homepage-col {
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
 }
 .col-content {
     background: url(../assets/bucegi.jpg) no-repeat right top;;
     background-size: cover;
-    max-width: 100%;
-    min-height: 340px;
+    max-width: 24em;
+    min-height: 21.25em;
     position: relative;
     color: #ffffff;
     font-family: 'Oswald';
+    margin: 0 auto;
 }
 .col-content::after {
     content: '';
@@ -33,64 +62,106 @@ body {
     background: rgba(0,0,0,0.3);
     z-index: 1;
 }
-.col-content h1 {
+.col-content-text {
     position: absolute; 
-    top: 41%;
+    top: 25%;
     text-align: center;
     width: 100%;
     font-weight: 600;
     z-index: 2;
 }
-
-@font-face {
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: normal;
-    src: url("../webfonts/Oswald-Regular.ttf");
+.col-content-text p {
+    margin-bottom: 0;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
 }
-@font-face {
-    font-family: 'Liujian';
-    font-style: normal;
-    font-weight: normal;
-    src: url("../webfonts/LiuJianMaoCao-Regular.ttf");
+.col-content-data {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    letter-spacing: 0.0625em;
+}
+.col-content-data p:not(:last-child) {
+    padding-right: 0.8em;
+}
+.col-content-flair {
+    position: absolute;
+    top: 0;
+    left:  0;
+    z-index: 2;
+    background-color: #E9A82B;
+    padding: 0 0.5em;
+}
+.col-content-flair p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.title-wrap h1 {
+    font-family: 'Montserrat';
+    color: #43383e;
+    text-align: center;
+    margin: 0.15em;
 }
 
 @media all and (max-width: 1200px){
     .col-content {
-        min-height: 290px;
+        min-height: 18.125em;
     }
     .col-content h1 {
         top:40%;
     }
+    .col-content-data {
+        font-size: smaller;
+    }
 }
 @media all and (max-width: 992px) {
     .col-content {
-        min-height: 220px;
+        min-height: 13.75em;
     }
     .col-content h1 {
-        font-size: 30px;
+        font-size: 1.875em;
+    }
+    .col-content-data {
+        font-size: x-small;
     }
 }
 @media all and (max-width: 767px) {
     .col-content {
-        min-height: 250px;
+/*        min-height: 15.625em;*/
+        max-width: 100%;
     }
-    .col-content h1 {
-        top: 38%;
-        font-size: 36px;
+    .col-content-text {
+        top: 18%;
+        font-size: larger;
+    }
+    .col-content-data {
+        font-size: small;
+        margin-bottom: -10px;
     }
     .homepage-container {
-        padding: 15px;
+        padding: 1em;
     }
     .homepage-col {
-        margin-bottom: 15px;
+        margin-bottom: 1em;
     }
 }
 @media all and (max-width: 575px) {
     .col-content {
-        min-height: 130px;
+        min-height: 8.125em;
     }
-    .col-content h1 {
-        font-size: 30px;
+    .col-content-text {
+        top: 19%;
+        font-size: smaller;
+    }
+    .title-wrap h1 {
+        font-size: xx-large;
+    }
+    .col-content-data {
+        display: none;
     }
 }
