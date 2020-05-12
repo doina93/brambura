@@ -70,6 +70,10 @@ body {
     font-weight: 600;
     z-index: 2;
 }
+.col-content-text.mountain-range-name {
+    top: 42%;
+    text-transform: uppercase;
+}
 .col-content-text p {
     margin-bottom: 0;
     font-weight: 100;
