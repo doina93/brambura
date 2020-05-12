@@ -11,9 +11,11 @@
         <link href="styles/all.css" rel="stylesheet">
         <link href="styles/fontello.css" rel="stylesheet">
         <link href="styles/trail.css" rel="stylesheet">
+        <link href="styles/flickity.css" rel="stylesheet">
         <script src="js/jquery-3.4.1.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/flickity.pkgd.min.js"></script>
         <script src="js/custom.js"></script>
     </head>
     <body>
@@ -30,19 +32,19 @@
                     <div class="collapse navbar-collapse custom-nav-list" id="collapsingNavbar">
                         <ul class="nav navbar-nav">
                             <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" href="#">Acasă</a>
+                                <a class="nav-link custom-nav-link" href="index.html">Acasă</a>
                             </li>
                             <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" href="#">Trasee</a>
+                                <a class="nav-link custom-nav-link" href="category.html">Trasee</a>
                             </li>
                             <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" href="#">Tips</a>
+                                <a class="nav-link custom-nav-link" href="tips.html">Tips</a>
+                            </li>
+                             <li class="nav-item custom-nav-item">
+                                <a class="nav-link custom-nav-link" href="aboutcontact.html">Despre</a>
                             </li>
                             <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" href="#">Despre</a>
-                            </li>
-                            <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" href="#">Contact</a>
+                                <a class="nav-link custom-nav-link" href="aboutcontact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -50,7 +52,7 @@
             </div>
         </header>
         <section>
-            <div class="container-fluid breadcrumb-weather-container">
+            <div class="container-fluid breadcrumb-container">
                 <div class="row">
                     <div class="col-md-6">
                         <div aria-label="breadcrumb">
@@ -61,197 +63,250 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-6 weather-forecast">
+                </div>
+            </div>
+            <div class="container-fluid">
+                    <div class="trail-title">
+                        <h1 class="trail-name">Denumire - Denumire Traseu - Traseu</h1>
+                        <h5 class="range-name">Grup Montan</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-4 trail-features">
+                            <div class="trail-features-wrapper">
+                                <div class="trail-info-item">
+                                    <p class="rulericon-">Distanță: <span>10km</span></p>
+                                </div>
+                                <div class="trail-info-item">
+                                    <p class="chart-areaicon-">Altitudine: <span>5km</span></p>
+                                </div>
+                                <div class="trail-info-item">
+                                    <p class="progress-2icon-">Dificultate: <span>Ușor</span></p>
+                                </div>
+                                <div class="trail-info-item">
+                                    <p class="hourglassicon-">Durată: <span>5h30min</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-8 trail-intro">
+                            <div class="trail-intro-pic">
+                                <img src="assets/traseuzagan-16x9.jpg" alt="the picture features ciucas mountain seen from the trail to zagan mountain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid trail-directions">
+                    <div class="row">
+                        <div class="col-md-8 map-container">
+                            <div class="trail-map">
+                                <div class="map-legend">
+                                    <div class="trailhead">
+                                        <p class="locationicon-">Pornire</p>
+                                    </div>
+                                    <div class="coordinates">
+                                        <p>Coordinates: <span>45.9835</span>, <span>39.7463</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 trail-text">
+                            <div class="trail-start">
+                                <h5>Cum ajung?</h5>
+                                <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant.</p>
+                            </div>
+                            <div class="save-map">
+                                <h6>Salvează harta</h6>
+                                <div class="save-map-buttons">
+                                    <a href="#">.gpx</a>
+                                    <a href="#">.kml</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid trail-description-container">
+                    <div class="trail-stage-description">
+                        <h5>Etapele traseului:</h5>
+                        <div class="trail-stage">
+                            <img>
+                            <p>Sinaia - Cabana Stâna Regală</p>
+                        </div>
+                        <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                        <div class="trail-stage">
+                            <img>
+                            <p>Cabana Stâna Regală - Cabana Piatra Arsă</p>
+                        </div>
+                        <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                        <div class="trail-stage">
+                            <img>
+                            <p>Cabana Piatra Arsă - Hotel Peştera</p>
+                        </div>
+                        <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                        <div class="trail-stage">
+                            <img>
+                            <p>Hotel Peştera - Valea Obârşiei</p>
+                        </div>
+                        <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                        <div class="trail-stage">
+                            <img>
+                            <p>Sinaia - Cabana Stâna Regală</p>
+                        </div>
+                        <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                        <div class="trail-stage">
+                            <img>
+                            <p>Cabana Piatra Arsă - Hotel Peştera</p>
+                        </div>
+                        <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                    </div>
+                </div>
+                <div class="container-fluid alert-container">
+                    <div class="custom-alerts">  
+                        <div class="alert-item bear-alert">
+                            <div class="alert-img">
+                                <div class="bear-alert-img"></div>
+                            </div>
+                            <p><strong>Atenție!</strong> Șanse ridicate de a întâlni urs pe traseu.</p>
+                        </div>
+                        <div class="alert-item snake-alert">
+                            <div class="alert-img">
+                                <div class="snake-alert-img"></div>
+                            </div>
+                            <p><strong>Atenție!</strong> Șanse ridicate de a întâlni vipere pe traseu.</p>
+                        </div>
+                        <div class="alert-item dog-alert">
+                            <div class="alert-img">
+                                <div class="dog-alert-img"></div>
+                            </div>
+                            <p><strong>Atenție!</strong> Șanse ridicate de a întâlni câini de stână pe traseu.</p>
+                        </div>
+                        <div class="alert-item water-alert">
+                            <div class="alert-img">
+                                <div class="water-alert-img"></div>
+                            </div>
+                            <p><strong>Atenție!</strong> Nu există surse de apă potabilă pe traseu.</p>
+                        </div>
+                        <div class="alert-item season-alert">
+                            <div class="alert-img">
+                                <div class="season-alert-img"></div>
+                            </div>
+                            <p><strong>Atenție!</strong> Traseu interzis pe timpul iernii.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row trail-social">
+                        <div class="col-md-6 col-sm-6">
+                            <a href="#">
+                                <div class="social-button">
+                                    <div class="shareicon-">Share</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <a href="#">
+                                <div class="social-button">
+                                    <div class="floppyicon-">Pentru offline</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-container container-fluid">
+                    <div class="weather-forecast">
                         <div class="weather-data-header">
-                            <h4>Vremea</h4>
+                            <h5>Vremea</h5>
                         </div>
                         <div class="weather-data">
 
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 trail-title">
-                        <h1 class="trail-name">Denumire - Denumire Traseu - Traseu</h1>
-                        <h5 class="range-name">Grup Montan</h5>
-                    </div>
-                    <div class="col-md-12 trail-features">
-                        <div class="trail-features-wrapper">
-                            <div class="trail-info-item">
-                                <p class="locationicon-">Început: <span><a href="#">Vezi harta</a></span></p>
-                            </div>
-                            <div class="trail-info-item">
-                                <p class="rulericon-">Distanță: <span>10km</span></p>
-                            </div>
-                            <div class="trail-info-item">
-                                <p class="chart-areaicon-">Altitudine: <span>5km</span></p>
-                            </div>
-                            <div class="trail-info-item">
-                                <p class="progress-2icon-">Dificultate: <span>Ușor</span></p>
-                            </div>
-                            <div class="trail-info-item">
-                                <p class="hourglassicon-">Durată: <span>5h30min</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid trail-intro">
-                <div class="row">
-
-                    <div class="col-md-6 trail-summary">
-                        <div class="trail-stage">
-                            <img>
-                            <p>Sinaia - Cabana Stâna Regală</p>
-                        </div>
-                        <div class="trail-stage">
-                            <img>
-                            <p>Cabana Stâna Regală - Cabana Piatra Arsă</p>
-                        </div> 
-                        <div class="trail-stage">
-                            <img>
-                            <p>Cabana Piatra Arsă - Hotel Peştera</p>
-                        </div> 
-                        <div class="trail-stage">
-                            <img>
-                            <p>Hotel Peştera - Valea Obârşiei</p>
-                        </div> 
-                        <div class="trail-stage">
-                            <img>
-                            <p>Valea Obârşiei - Cabana Omu</p>
-                        </div> 
-                    </div>
-                    <div class="col-md-6 trail-intro-pic">
-                        <img src="assets/traseuzagan.jpg" alt="zaganul trail">
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid trail-directions">
-                <div class="row">
-                    <div class="col-md-5 map-container">
-                        <div class="trail-map">
-                            <div class="map-legend">
-                                <div class="trailhead">
-                                    <p class="locationicon-">Pornire</p>
-                                </div>
-                                <div class="coordinates">
-                                    <p>Coordinates: <span>45.9835</span>, <span>39.7463</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7 trail-text">
-                        <div class="trail-start">
-                            <h5>Cum ajung?</h5>
-                            <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid trail-description-container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="trail-stage-description">
-                            <div class="trail-stage">
-                                <img>
-                                <p>Sinaia - Cabana Stâna Regală</p>
-                            </div>
-                            <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
-                            <div class="trail-stage">
-                                <img>
-                                <p>Cabana Stâna Regală - Cabana Piatra Arsă</p>
-                            </div>
-                            <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
-                            <div class="trail-stage">
-                                <img>
-                                <p>Cabana Piatra Arsă - Hotel Peştera</p>
-                            </div>
-                            <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 trail-description-img">
-                        <img src="assets/traseubucegi.jpg" alt="bucegi trail">
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid trail-description-container-2">
-                <div class="row">
-                    <div class="col-md-6 trail-description-img">
-                        <img src="assets/traseuparang.jpg" alt="traseu parang">
-                    </div>
-                    <div class="col-md-6 trail-stage-description">
-                        <div class="trail-stage">
-                            <img>
-                            <p>Hotel Peştera - Valea Obârşiei</p>
-                        </div>
-                        <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
-                        <div class="trail-stage">
-                            <img>
-                            <p>Sinaia - Cabana Stâna Regală</p>
-                        </div>
-                        <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
-                        <div class="trail-stage">
-                            <img>
-                            <p>Cabana Piatra Arsă - Hotel Peştera</p>
-                        </div>
-                        <p>Tempor nec feugiat nisl pretium fusce id velit ut. Mattis pellentesque id nibh tortor id aliquet lectus.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="container-fluid tips-thumbnail-container">
-                <div class="row">
+                <div class="container-fluid tips-thumbnail-container">
                     <div class="col-md-12 tips-thumbnail-header">
                         <h4>Sfaturi utile pentru atunci când mergem în drumeție</h4>
                     </div>
-                    <div class="col-md-4">
-                        <div class="tips-thumbnail">
-                            <a href="#">
-                                <div class="tips-thumbnail-text">
-                                    <h4>Cum economisim?</h4>
-                                    <p>Mattis pellentesque id nibh tortor id aliquet lectus.</p>
-                                </div>
-                            </a>
+                    <div class="blog-carousel">
+                        <div class="carousel-cell">
+                            <div class="tips-thumbnail">
+                                <a href="#">
+                                    <div class="tips-thumbnail-text">
+                                        <h4>Cum economisim?</h4>
+                                        <p>Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="tips-thumbnail">
-                            <a href="#">
-                                <div class="tips-thumbnail-text">
-                                    <h4>Cum economisim?</h4>
-                                    <p>Mattis pellentesque id nibh tortor id aliquet lectus.</p>
-                                </div>
-                            </a>
+                        <div class="carousel-cell">
+                            <div class="tips-thumbnail">
+                                <a href="#">
+                                    <div class="tips-thumbnail-text">
+                                        <h4>Cum economisim?</h4>
+                                        <p>Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="tips-thumbnail">
-                            <a href="#">
-                                <div class="tips-thumbnail-text">
-                                    <h4>Cum economisim?</h4>
-                                    <p>Mattis pellentesque id nibh tortor id aliquet lectus.</p>
-                                </div>
-                            </a>
+                        <div class="carousel-cell">
+                            <div class="tips-thumbnail">
+                                <a href="#">
+                                    <div class="tips-thumbnail-text">
+                                        <h4>Cum economisim?</h4>
+                                        <p>Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="tips-thumbnail">
+                                <a href="#">
+                                    <div class="tips-thumbnail-text">
+                                        <h4>Cum economisim?</h4>
+                                        <p>Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="tips-thumbnail">
+                                <a href="#">
+                                    <div class="tips-thumbnail-text">
+                                        <h4>Cum economisim?</h4>
+                                        <p>Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid feedback-container">
-                <div class="trail-social">
-                    <a href="#" class="shareicon-">Share</a>
-                    <a href="#" class="floppyicon-">Pentru offline</a>
-                    <a href="#" class="commenting-oicon-">Comentarii</a>
+                <div class="container-fluid feedback-container">
+                    <div class="comment-body">
+                        <div class="comment-picture">
+                            <div class="usericon-"></div>
+                        </div>
+                        <div class="comment-text-wrap">
+                            <div class="comment-name">
+                                <h5>Ion Ionescu</h5>
+                            </div>
+                            <div class="comment-date">
+                                <p><span>5</span> Aprilie</p>
+                            </div>
+                            <div class="comment-text">
+                                <p>Imperdiet proin fermentum leo vel orci porta non. Sed lectus vestibulum mattis ullamcorper velit. Malesuada nunc vel risus commodo viverra. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-form">
+                        <div class="comment-form-intro">
+                            <p>Lasă un comentariu!</p>
+                            <p>Adresa de e-mail nu va fi publicată.</p>
+                        </div>
+                        <form>
+                            <input name="name" type="text" class="comment-input" placeholder="Name"/>
+                            <input name="email" type="text" class="comment-input" placeholder="E-mail"/>
+                            <textarea name="text" class="comment-input" placeholder="Comment"></textarea>
+                            <input class="comment-button" type="submit" value="COMENTEAZĂ"/>
+                        </form>
+                    </div>
                 </div>
-                <div class="comment-form">
-                    <form>
-                        <input name="name" type="text" class="comment-input" placeholder="Name"/>
-                        <textarea name="text" class="comment-input" placeholder="Comment"></textarea>
-                        <input class="comment-button" type="submit" value="COMENTEAZĂ"/>
-                    </form>
-                </div>
-            </div>
         </section>
         <footer>
             <div class="container-fluid">
@@ -260,16 +315,24 @@
                         <img src="assets/bramburalogo.svg" alt="logo">
                     </div>
                     <div class="col-sm-12 col-md-2 footer-item">
-                        <a href="#">About us</a>
+                        <a href="#">
+                            <div>About us</div>
+                        </a>
                     </div>
-                    <div class="col-sm-12 col-md-2 footer-item mailicon-">
-                        <a href="#">Contact us</a>
+                    <div class="col-sm-12 col-md-2 footer-item">
+                        <a href="#">
+                            <div class="mailicon-">Contact us</div>
+                        </a>
                     </div>
-                    <div class="col-sm-12 col-md-2 footer-item instagramicon-">
-                        <a href="#">Follow us</a>
+                    <div class="col-sm-12 col-md-2 footer-item">
+                        <a href="#">
+                            <div class="instagramicon-">Follow us</div>
+                        </a>
                     </div>
-                    <div class="col-sm-12 col-md-2 footer-item facebook-officialicon-">
-                        <a href="#">Like us</a>
+                    <div class="col-sm-12 col-md-2 footer-item">
+                        <a href="#">
+                            <div class="facebook-officialicon-">Like us</div>
+                        </a>
                     </div>
                     <div class="col-md-12 footer-copyrights">
                         <p>&copy 2020 All Rights Reserved.</p>
