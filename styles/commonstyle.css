@@ -66,6 +66,11 @@ footer {
     padding: 0px;
     margin: auto;
 }
+.footer-item a div:hover,
+.footer-item a div:active,
+.footer-item a div:focus {
+    background-color: rgba(255, 255, 255, .3);
+}
 .footer-item a {
     text-decoration: none;
     font-family: 'Oswald';
