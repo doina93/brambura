@@ -70,23 +70,25 @@ ul.breadcrumb-menu {
 .trail-stage-description h5 {
     text-transform: uppercase;
     font-family: 'Montserrat';
-    margin-bottom: 1.5em;
+    margin: 0 3rem 1.5em;
     border-bottom: 1px solid lightgrey;
 }
-.trail-stage {
+.trail-stage-title {
     display: inline-flex;
     padding: 10px 0 10px 0;
 }
-.trail-stage img {
-    height: 20px;
-    width: 20px;
-    color: #fff;
-    border: 1px solid #000;
-    margin-right: 5px;
-}
-.trail-stage p {
+.trail-stage-title p {
     margin-bottom: 0;
     font-weight: 600;
+}
+.trail-stage:nth-child(even) {
+    padding: 0 3rem 1rem 3rem;
+    background: #fff;
+}
+.trail-stage:nth-child(odd) {
+    margin: 0 -3rem;
+    padding: 0 6rem 1rem 6rem;
+    background: #f5fafa;
 }
 .trail-features p {
     margin-bottom: 0;
@@ -147,10 +149,6 @@ ul.breadcrumb-menu {
 }
 .trail-text {
     padding-top: 20px;
-}
-.trail-description-container {
-    padding: 0px 6rem;
-    background-color: #f5fafa;
 }
 .trail-description-container-2 {
     padding: 50px 6rem 0;
@@ -338,6 +336,64 @@ ul.breadcrumb-menu {
     width: 4em;
     height: 4em;
 }
+.triangle-yellow {
+    background: url(../assets/triunghi-galben.svg) center center no-repeat;
+    background-size: cover;
+}
+.triangle-red {
+    background: url(../assets/triunghi-rosu.svg) center center no-repeat;
+    background-size: cover;
+}
+.triangle-blue {
+    background: url(../assets/triunghi-albastru.svg) center center no-repeat;
+    background-size: cover;
+}
+.dot-yellow {
+    background: url(../assets/punct-galben.svg) center center no-repeat;
+    background-size: cover;
+}
+.dot-red {
+    background: url(../assets/punct-rosu.svg) center center no-repeat;
+    background-size: cover;
+}
+.dot-blue {
+    background: url(../assets/punct-albastru.svg) center center no-repeat;
+    background-size: cover;
+}
+.line-yellow {
+    background: url(../assets/banda-galbena.svg) center center no-repeat;
+    background-size: cover;
+}
+.line-red {
+    background: url(../assets/banda-rosie.svg) center center no-repeat;
+    background-size: cover;
+}
+.line-blue {
+    background: url(../assets/banda-albastra.svg) center center no-repeat;
+    background-size: cover;
+}
+.cross-yellow {
+    background: url(../assets/cruce-galbena.svg) center center no-repeat;
+    background-size: cover;
+}
+.cross-red {
+    background: url(../assets/cruce-rosie.svg) center center no-repeat;
+    background-size: cover;
+}
+.cross-blue {
+    background: url(../assets/cruce-albastra.svg) center center no-repeat;
+    background-size: cover;
+}
+.triangle-blue, .triangle-yellow, .triangle-red {
+    width: 1.5em;
+}
+.cross-blue, .cross-yellow, .cross-red,
+.dot-blue, .dot-yellow, .dot-red,
+.line-blue, line-yellow, .line-red {
+    width: 1.395em;
+    height: 1.37em;
+    margin: 0 0.15em 0.15em;
+}
 @media all and (max-width: 992px) {
     ul.breadcrumb-menu {
         padding: 10px 0 0 3rem;
@@ -362,107 +418,122 @@ ul.breadcrumb-menu {
     .coordinates {
         padding-left: 10px;
     }
+/*/*    .trail-stage:nth-child(even) {
+        margin: 0 -3rem;
+        padding: 1rem 3rem;
+        background: #fff;
+    }
+    .trail-stage:nth-child(odd) {
+        margin: 0 -3rem;
+        padding: 1rem 3rem;
+        background: #fff;
+    }*/
 }
 @media all and (max-width: 767px) {
-        .breadcrumb-weather-container {
-            padding-bottom: 30px;
-        }
-        .weather-data-header {
-            text-align: left;
-            padding-left: 1rem;
-        }
-        .weather-data {
-            margin: 0;
-        }
-        ul.breadcrumb-menu {
-            padding: 0;
-        }
-        .trail-name {
-            font-size: 20px;
-        }
-        .range-name {
-            font-size: 18px;
-        }
-        .trail-intro {
-            padding: 0;
-            margin: auto;
-            background: transparent;
-        }
-        .trail-intro-pic img {
-            width: 100%;
-            overflow: hidden;
-        }
-        .trail-features {
-            padding: 0 1rem;
-            text-align: center;
-        }
-        .trail-features-wrapper {
-            display: block;
-        }
-        .trail-features-item {
-            padding: 10px 0;
-        }
-        .trail-directions {
-            padding: 1rem 1rem 0;
-        }
-        .trail-map {
-            height: 200px;
-        }
-        .map-legend {
-            font-size: 14px;
-        }
-        .trail-start {
-            padding-top: 0;
-        }
-        .trail-description-container {
-            padding: 0 1rem;
-        }
-        .trail-description-container-2 {
-            padding: 1rem 1rem 0;
-        }
-        .weather-container {
-            padding: 1rem;
-        }
-        .alert-container {
-            padding: 0 1rem;
-        }
-        .tips-thumbnail-container {
-            padding: 1rem 1rem 0;
-        }
-        .feedback-container {
-            padding: 1rem 1rem 0;
-        }
-        .trail-social {
-            padding: 0 1rem;
-        }
-        .map-container {
-            padding: 0;
-        }
-        .save-map {
-            margin: 0 0 1em;
-        }
-        .alert-item p {
-            font-size: smaller;
-            padding-left: 1.5em;
-        }
-        .carousel-cell {
-            width: 50%;
-        }
+    .breadcrumb-weather-container {
+        padding-bottom: 30px;
     }
-    @media all and (max-width: 578px) {
-        .trail-features-wrapper {
-            display: block;
-        }
-        .trail-social {
-            padding: 0;
-        }
-        .social-button {
-            margin-top: 0.3em;
-        }
-        .trail-intro-pic {
-            margin-right: 0;
-        }
-        .carousel-cell {
-            width: 100%;
-        }
+    .weather-data-header {
+        text-align: left;
+        padding-left: 1rem;
     }
+    .weather-data {
+        margin: 0;
+    }
+    ul.breadcrumb-menu {
+        padding: 0;
+    }
+    .trail-name {
+        font-size: 20px;
+    }
+    .range-name {
+        font-size: 18px;
+    }
+    .trail-intro {
+        padding: 0;
+        margin: auto;
+        background: transparent;
+    }
+    .trail-intro-pic img {
+        width: 100%;
+        overflow: hidden;
+    }
+    .trail-features {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .trail-features-wrapper {
+        display: block;
+    }
+    .trail-features-item {
+        padding: 10px 0;
+    }
+    .trail-directions {
+        padding: 1rem 1rem 0;
+    }
+    .trail-map {
+        height: 200px;
+    }
+    .map-legend {
+        font-size: 14px;
+    }
+    .trail-start {
+        padding-top: 0;
+    }
+    .trail-description-container {
+        padding: 0 1rem;
+    }
+    .trail-description-container-2 {
+        padding: 1rem 1rem 0;
+    }
+    .weather-container {
+        padding: 1rem;
+    }
+    .alert-container {
+        padding: 0 1rem;
+    }
+    .tips-thumbnail-container {
+        padding: 1rem 1rem 0;
+    }
+    .feedback-container {
+        padding: 1rem 1rem 0;
+    }
+    .trail-social {
+        padding: 0 1rem;
+    }
+    .map-container {
+        padding: 0;
+    }
+    .save-map {
+        margin: 0 0 1em;
+    }
+    .alert-item p {
+        font-size: smaller;
+        padding-left: 1.5em;
+    }
+    .carousel-cell {
+        width: 50%;
+    }
+    .trail-stage:nth-child(even) {
+        margin: 0 -1rem;
+        padding: 0 1rem;
+        background: #fff;
+    }
+}
+@media all and (max-width: 578px) {
+    .trail-features-wrapper {
+        display: block;
+    }
+    .trail-social {
+        padding: 0;
+    }
+    .social-button {
+        margin-top: 0.3em;
+    }
+    .trail-intro-pic {
+        margin-right: 0;
+    }
+    .carousel-cell {
+        width: 100%;
+    }
+}
