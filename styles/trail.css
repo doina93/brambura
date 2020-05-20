@@ -70,7 +70,7 @@ ul.breadcrumb-menu {
 .trail-stage-description h5 {
     text-transform: uppercase;
     font-family: 'Montserrat';
-    margin: 0 3rem 1.5em;
+    margin: 0 5rem 1.5em;
     border-bottom: 1px solid lightgrey;
 }
 .trail-stage-title {
@@ -82,12 +82,12 @@ ul.breadcrumb-menu {
     font-weight: 600;
 }
 .trail-stage:nth-child(even) {
-    padding: 0 3rem 1rem 3rem;
+    padding: 0 5rem 1rem 5rem;
     background: #fff;
 }
 .trail-stage:nth-child(odd) {
     margin: 0 -3rem;
-    padding: 0 6rem 1rem 6rem;
+    padding: 0 8rem 1rem 8rem;
     background: #f5fafa;
 }
 .trail-features p {
@@ -394,6 +394,14 @@ ul.breadcrumb-menu {
     height: 1.37em;
     margin: 0 0.15em 0.15em;
 }
+.cross-blue, .cross-yellow, .cross-red,
+.line-blue, line-yellow, .line-red {
+    border: 0.5px solid darkgrey;
+}
+.dot-blue, .dot-yellow, .dot-red {
+    border: 0.5px solid darkgrey;
+    border-radius: 50%;
+}
 @media all and (max-width: 992px) {
     ul.breadcrumb-menu {
         padding: 10px 0 0 3rem;
@@ -514,10 +522,13 @@ ul.breadcrumb-menu {
     .carousel-cell {
         width: 50%;
     }
-    .trail-stage:nth-child(even) {
+    .trail-stage:nth-child(even),
+    .trail-stage:nth-child(odd) {
         margin: 0 -1rem;
         padding: 0 1rem;
-        background: #fff;
+    }
+    .trail-stage-description h5 {
+        margin: 0;
     }
 }
 @media all and (max-width: 578px) {
