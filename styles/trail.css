@@ -183,21 +183,29 @@ ul.breadcrumb-menu {
     letter-spacing: 1.5px;
     color: #3f3f3f;
 }
-.tips-thumbnail {
-    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%), url(../assets/parang.jpg) no-repeat center;
-    background-size: cover;
-    margin-bottom: 30px;
-    min-height: 200px;
-    padding: 20px;
+.tips-thumbnail img {
     position: relative;
+    max-width: 100%;
+    min-height: 200px;
 }
 .tips-thumbnail a {
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background-size: cover;
     text-decoration: none;
     color: #fff;
+    height: 100%;
     position: absolute;
     bottom: 0;
-    left: 20px;
+    left: 0;
     font-family: 'Montserrat';
+    width: 100%;
+    z-index: 1;
+}
+.tips-thumbnail-text {
+    padding: 20px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
 }
 .tips-thumbnail a p:nth-child(2) {
     color: lightgrey;
@@ -388,19 +396,17 @@ ul.breadcrumb-menu {
     width: 1.5em;
 }
 .cross-blue, .cross-yellow, .cross-red,
-.dot-blue, .dot-yellow, .dot-red,
 .line-blue, line-yellow, .line-red {
     width: 1.395em;
     height: 1.37em;
     margin: 0 0.15em 0.15em;
 }
 .cross-blue, .cross-yellow, .cross-red,
-.line-blue, line-yellow, .line-red {
-    border: 0.5px solid darkgrey;
-}
+.line-blue, line-yellow, .line-red,
 .dot-blue, .dot-yellow, .dot-red {
-    border: 0.5px solid darkgrey;
-    border-radius: 50%;
+    width: 1.36em;
+    height: 1.38em;
+    margin: 0 0.15em 0.15em;
 }
 @media all and (max-width: 992px) {
     ul.breadcrumb-menu {
@@ -426,16 +432,6 @@ ul.breadcrumb-menu {
     .coordinates {
         padding-left: 10px;
     }
-/*/*    .trail-stage:nth-child(even) {
-        margin: 0 -3rem;
-        padding: 1rem 3rem;
-        background: #fff;
-    }
-    .trail-stage:nth-child(odd) {
-        margin: 0 -3rem;
-        padding: 1rem 3rem;
-        background: #fff;
-    }*/
 }
 @media all and (max-width: 767px) {
     .breadcrumb-weather-container {
